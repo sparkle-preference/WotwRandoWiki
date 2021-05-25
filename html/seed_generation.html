@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ori WOTW Rando: Wiki</title>
+		<link rel="stylesheet" href="../css/styles.css?v=1.0">
+	</head>
+	<body>
+		<h1>Seed generation</h1>
+		<hr class="rounded">
+		<div class="container">
+			<div class="main">
+				<p>
+					To get started, you will need to download Java version 8 <a href="https://www.java.com/en/download/manual.jsp">here</a>. Make sure you have Java 8 specifically since it won't work with other versions of Java. After downloading Java, you will need to restart your computer. Once Java is fully installed, launch SeedGen.jar from the randomizer installation folder.
+				</p>
+				<h2>Main tab</h2>
+				<p>
+					This is where most of the options are. Let’s go through each of them.
+				</p>
+				<h3>Logic groups</h3>
+				<p>
+					The logic group is basically the difficulty of the seed. By default it’s set to the Moki group. Moki logic is intended for newer players who have finished the game at least once. By enabling a logic group, you will add more paths to the logic.
+					<ul>
+						<li>Gorlek adds more advanced movement skills like weapon hovering and damage boosts.</li>
+						<li>Glitched paths will add glitches to the logic. Each logic group has its own set of glitches (except for Moki which is glitchless).</li>
+						<li>Unsafe paths will add paths that have not been sorted in any logic group. There is a large range of difficulties in unsafe paths, as it includes any paths the logic creators have found that don’t fit into one of the current logic group. Although it’s unlikely, it is also possible that some paths can result in softlocks as these paths are not verified by the path validator.</li>
+					</ul>
+					If you want to learn more about what the each group wan expect from you, please check the <a href="logic_groups.html">logic guide</a>.
+				</p>
+				<h3>Goal Modes</h3>
+				<p>
+					Goal modes are restrictions which prevent you from entering the final boss room before you have completed your goal. If nothing is checked, you will be able to enter this room after destroying the corrupted hearts, like in a normal playthrough. You can learn more about goal modes [here](https://github.com/sparkle-preference/OriWotwRandomizerClient/wiki/Goal-modes).
+				</p>
+				<h3>Spawn Options</h3>
+				<p>
+					These options affects state from the game
+					<ul>
+						<li>Spawn with Sword gives you the Sword (Spirit Edge) skill from the start. If this option is unchecked, Sword will be included in the item pool and, like every other pickup, will be placed in a random pickup location.</li>
+						<li>Rainy Marsh starts the game in the state just after the prologue. The big change of this option is that you will need to fight Howl. Otherwise the game begins in the state after the Howl fight.</li>
+						<li>Remove KS doors starts the game with every keystone door already opened.</li>
+					</ul>
+				</p>
+				<h3>Spawn Area</h3>
+				<p>
+					Choose where you want to start your seed from. All seeds will start on a Spirit Well. Checking the Random spawn option will make you spawn at one spirit well at random. If your starting point isn't Marsh, you will start with some random items, at least one of which is used for progression.
+				</p>
+				<h3>Miscellaneous options</h3>
+				<p>
+					These options change the item pool of the randomizer
+					<ul>
+						<li>Launch on Seir places the skill Launch on the Seir pickup so you will need to get all wisps before getting Launch. Launch won't appear on another item.</li>
+						<li><a href="features/hints.html">Zone Hints</a> replaces the pickup you get by buying the map from Lupo in each area with a hint telling you how many key items are in the area. Lupo and Opher will also sell hints giving the area in which some skills are located.</li>
+						<li>Items on Quests gives you items when progressing and completing quests. Without this option, quests won't give you anything besides the quest's object such as the wisps.</li>
+						<li><a href="features/new_items.html">Bonus Items</a> adds rando exclusive items like an extra air dash, health and energy regen, and weapon upgrades. Weapon upgrades are sold by Opher.</li>
+						<li>Teleporters add items in the item pool which unlock teleporters. The randomizer can ask you to activate a teleporter through one of these items and teleport to that newly unlocked teleporter to continue the seed.</li>
+						<li>Race Mode generates a spoiler-free version of the seed. It also disables some function like the logic filter.</li>
+						<li>Enable Netcode activates the communication with the randomizer server, which is required for bingo autotracking and coop games. Learn more about these game modes <a href="features/multiplayer.html">here</a>.</li>
+					</ul>
+				</p>
+				<h1>Headers tab</h1>
+				<p>
+					Headers are game mods which can do a lot of things. By default, you will have these ones:
+					<ul>
+						<li>3-line bingo: prints updates when you have completed a line in bingo and sets the game as completed when you get 3 lines. Enable Netcode if you want to use this header</li>
+						<li>Better random spawn: opens some doors by default, making spawning from other teleporters than Marsh work better.</li>
+						<li>Launch from Bingo: gives you the Launch skill after completing 2 bingo lines. Enable Netcode if you want this header to work.</li>
+						<li>Quest helper: adds a textbox which shows you which quests you are missing for the Force Quests goal mode when pressing Ctrl+Alt+1</li>
+						<li>Skippable cutscenes: skips several cutscenes which aren't skipped normally by the randomizer.</li>
+					</ul>
+					You can also create a folder called headers in your randomizer installation folder. If you place a randomizer header file (.wotwrh) in this folder, the seed generator will load it and you will be able to enable the headers within from the header tab.
+				</p>
+				<h1>Advanced tab</h1>
+				<p>
+					This is the same thing as a header, but you will be able to write your own header which will be used in the seed you generate. To learn how to write an header, check <a href="https://docs.google.com/document/d/1IR1DHnbtO8rydCLEgFh-yp3iRkzZbFAG-EmR5hxrfmU/edit">this document</a>
+				</p>
+			</div>
+			<div class="divider"></div>
+			<div class="sidebar">
+				<ul style="list-style-type:none">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="new_features.html">New features</a></li>
+					<li><a href="installation.html">Installation</a></li>
+					<li><a href="how_to_start.html">How to start</a></li>
+					<li><a href="seed_generation.html">Seed generation</a></li>
+					<li><a href="logic_groups.html">Logic groups</a></li>
+					<li><a href="settings.html">Settings</a></li>
+					<li><a href="keybinds.html">Keybinds</a></li>
+					<li><a href="tutorials.html">Tutorials</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

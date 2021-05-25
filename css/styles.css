@@ -1,0 +1,36 @@
+body {
+	background-color: #36393f;
+	color: #ccd5cf;
+	padding: 0% 3%;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+
+.main {
+	flex: 1 5;
+	margin-right: 8px;
+}
+
+.sidebar {
+	flex: 0 1 20rem;
+}
+
+a {
+	text-decoration: none;
+	color: #00aef4;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+.divider {
+	margin: 16px 0;
+	border-left: 1px solid;
+	border-color: #808080
+}
