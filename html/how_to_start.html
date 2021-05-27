@@ -1,27 +1,33 @@
 <!doctype html>
 
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8">
+		<meta charset='utf-8'>
 		<title>Ori WOTW Rando: Wiki</title>
-		<link rel="stylesheet" href="../css/styles.css?v=1.0">
+		<link rel='stylesheet' href='/WotwRandoWiki/css/styles.css?v=1.0'>
+		<script type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/search_bar.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/sidebar.js'></script>
 	</head>
 	<body>
-		<h1>How to start</h1>
-		<hr class="rounded">
-		<div class="container">
-			<div class="main">
+		<div class='container'>
+			<h1 class='title'>How to start</h1>
+			<input id='search' class='search_bar' type='search' placeholder='Search..'>
+		</div>
+		<hr class='rounded'>
+		<div class='container'>
+			<div class='main'>
 				<p>
-					After <a href="installation.html">installing the randomizer</a>, you need to get a .wotwr file.<br/>
+					After <a href='installation.html'>installing the randomizer</a>, you need to get a .wotwr file.<br/>
 					These files contain the necessary information for your randomized playthrough, like the location of each item.<br/>
-					You can generate these files yourself by using the <a href="seed_generation.html">seed generator</a>.
+					You can generate these files yourself by using the <a href='seed_generation.html'>seed generator</a>.
 				</p>
 				<p>
 					For beginners, we recommend to play with these settings.<br/>
-					You can choose to disable Force Wisps which is a <a href="features/goal_modes.html">goal mode</a> preventing you from entering the last Willow room before you collected all 5 wisps.
+					You can choose to disable Force Wisps which is a <a href='features/goal_modes.html'>goal mode</a> preventing you from entering the last Willow room before you collected all 5 wisps.
 				</p>
-				<img src="../images/beginner_settings.png" alt="Beginner Settings">
-				<hr class="rounded">
+				<img src='../images/beginner_settings.png' alt='Beginner Settings'>
+				<hr class='rounded'>
 				<p>
 					After you get your first .wotwr file, you want to double click on it. It should ask you which program you want to use in order to open this type of file. Choose to browse for more apps on your computer and search the file WotwRando.exe which is located in your randomizer installation folder. Once you have associated .wotwr files with the randomizer executor, you shouldn’t have to do it again and simply double clicking on a .wotwr will launch the randomizer.
 				</p>
@@ -31,26 +37,14 @@
 				<p>
 					When you reach the main menu, you can try to press [Alt+L](https://github.com/sparkle-preference/OriWotwRandomizerClient/wiki/Randomizer's-special-commands) which should display a textbox with some information about the seed. If nothing appeared, the randomizer failed to inject itself in the game so you’ll need to close the game and open your .wotwr file again.
 				</p>
-				<hr class="rounded">
+				<hr class='rounded'>
 				<p>
 					Once the randomizer launches successfully, you simply need to start playing! It’s recommended to play on a new save file because the randomizer will also affect savefiles made with the base game.
-					If you ever feel lost when playing a seed, you can open your map and use the logic filter which will show you every item you can collect with the skills you have. You can also read the <a href="logic_groups.html">logic guide</a> to learn more about what the randomizer might want you to do. The community is also able to help so don’t hesitate to join the <a href="https://discord.com/invite/aSz79M4">Ori speedrunning Discord</a> or the <a href="https://discord.gg/Ahwh4Na">Ori randomizer development Discord</a> if you need help with something!
+					If you ever feel lost when playing a seed, you can open your map and use the logic filter which will show you every item you can collect with the skills you have. You can also read the <a href='logic_groups.html'>logic guide</a> to learn more about what the randomizer might want you to do. The community is also able to help so don’t hesitate to join the <a href='https://discord.com/invite/aSz79M4'>Ori speedrunning Discord</a> or the <a href='https://discord.gg/Ahwh4Na'>Ori randomizer development Discord</a> if you need help with something!
 				</p>
 			</div>
 			<div class="divider"></div>
-			<div class="sidebar">
-				<ul style="list-style-type:none">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="new_features.html">New features</a></li>
-					<li><a href="installation.html">Installation</a></li>
-					<li><a href="how_to_start.html">How to start</a></li>
-					<li><a href="seed_generation.html">Seed generation</a></li>
-					<li><a href="logic_groups.html">Logic groups</a></li>
-					<li><a href="settings.html">Settings</a></li>
-					<li><a href="keybinds.html">Keybinds</a></li>
-					<li><a href="tutorials.html">Tutorials</a></li>
-				</ul>
-			</div>
+			<div class="sidebar"></div>
 		</div>
 	</body>
 </html>

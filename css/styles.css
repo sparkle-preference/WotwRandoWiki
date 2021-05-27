@@ -20,6 +20,27 @@ body {
 	flex: 0 1 20rem;
 }
 
+.title {
+	flex: 4 1;
+}
+
+.search_bar {
+	flex: 1 1;
+	align-self: center;
+	height: 0%;
+}
+
+.search_container {
+	display: flex;
+}
+
+.search_field {
+	flex-grow: 1;
+	align-self: center;
+	height: 0%;
+	margin: 0 8px;
+}
+
 a {
 	text-decoration: none;
 	color: #00aef4;

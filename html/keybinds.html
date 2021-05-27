@@ -1,16 +1,22 @@
 <!doctype html>
 
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8">
+		<meta charset='utf-8'>
 		<title>Ori WOTW Rando: Wiki</title>
-		<link rel="stylesheet" href="../css/styles.css?v=1.0">
+		<link rel='stylesheet' href='/WotwRandoWiki/css/styles.css?v=1.0'>
+		<script type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/search_bar.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/sidebar.js'></script>
 	</head>
 	<body>
-		<h1>Keybinds</h1>
-		<hr class="rounded">
-		<div class="container">
-			<div class="main">
+		<div class='container'>
+			<h1 class='title'>Keybinds</h1>
+			<input id='search' class='search_bar' type='search' placeholder='Search..'>
+		</div>
+		<hr class='rounded'>
+		<div class='container'>
+			<div class='main'>
 				<p>
 					Though they are not related to the randomizer, the Ori speedrun community do have some rules regarding bind. If you are playing by yourself you can ignore them but when playing races, some organizator might want you to follow variants of these rules:
 				</p>
@@ -34,7 +40,7 @@
 				<p>
 					If you go to `AppData\Local\Ori and the Will of The Wisps`, you will find the file `KeyRebindings.txt`. By opening this file with a text editor like Notepad, you can change your binds.
 					Each action can be bound to 4 buttons, each one for a different control scheme. The file format is:<br/>
-					<span style="margin-left: 8px">Action: Button1, Button2, Button3, Button4</span><br/>
+					<span style='margin-left: 8px'>Action: Button1, Button2, Button3, Button4</span><br/>
 					To specify a button, you have to use their Unity Keycode, which you can find on [this page](https://docs.unity3d.com/ScriptReference/KeyCode.html).
 					Switching from one control scheme to another will freeze your game a bit so you want your multibind on the same control scheme.<br/>
 					Don’t forget to reload your game after you modify this file. Avoid using the in-game binding tool if you have edited this file by yourself since the in-game tool might delete some of your binds if you do so.
@@ -51,19 +57,7 @@
 				</p>
 			</div>
 			<div class="divider"></div>
-			<div class="sidebar">
-				<ul style="list-style-type:none">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="new_features.html">New features</a></li>
-					<li><a href="installation.html">Installation</a></li>
-					<li><a href="how_to_start.html">How to start</a></li>
-					<li><a href="seed_generation.html">Seed generation</a></li>
-					<li><a href="logic_groups.html">Logic groups</a></li>
-					<li><a href="settings.html">Settings</a></li>
-					<li><a href="keybinds.html">Keybinds</a></li>
-					<li><a href="tutorials.html">Tutorials</a></li>
-				</ul>
-			</div>
+			<div class="sidebar"></div>
 		</div>
 	</body>
 </html>

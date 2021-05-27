@@ -4,15 +4,21 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Ori WOTW Rando: Wiki</title>
-		<link rel="stylesheet" href="../../css/styles.css?v=1.0">
+		<link rel="stylesheet" href="/WotwRandoWiki/css/styles.css?v=1.0">
+		<script type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/search_bar.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/sidebar.js'></script>
 	</head>
 	<body>
-		<h1>Moki</h1>
+		<div class='container'>
+			<h1 class='title'>Moki</h1>
+			<input id='search' class='search_bar' type='search' placeholder='Search..'>
+		</div>
 		<hr class="rounded">
 		<div class="container">
 			<div class="main">
 				<p>
-					The Moki <a href="../logic_groups.html">logic group</a> is designed for players who have finished the game at least once. A moki seed does not require any particular requirement as long as you know how to use the skill set of Ori. The logic can ask you to use these skills, individually or in combination:
+					The Moki <a href="/WotwRandoWiki/html/logic_groups.html">logic group</a> is designed for players who have finished the game at least once. A moki seed does not require any particular requirement as long as you know how to use the skill set of Ori. The logic can ask you to use these skills, individually or in combination:
 				</p>
 				<ul>
 					<li>Double jump, grapple, dash, water dash, burrow and launch for movement</li>
@@ -29,19 +35,7 @@
 				</p>
 			</div>
 			<div class="divider"></div>
-			<div class="sidebar">
-				<ul style="list-style-type:none">
-					<li><a href="../../index.html">Home</a></li>
-					<li><a href="../new_features.html">New features</a></li>
-					<li><a href="../installation.html">Installation</a></li>
-					<li><a href="../how_to_start.html">How to start</a></li>
-					<li><a href="../seed_generation.html">Seed generation</a></li>
-					<li><a href="../logic_groups.html">Logic groups</a></li>
-					<li><a href="../settings.html">Settings</a></li>
-					<li><a href="../keybinds.html">Keybinds</a></li>
-					<li><a href="../tutorials.html">Tutorials</a></li>
-				</ul>
-			</div>
+			<div class="sidebar"></div>
 		</div>
 	</body>
 </html>

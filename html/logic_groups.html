@@ -1,16 +1,22 @@
 <!doctype html>
 
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="utf-8">
+		<meta charset='utf-8'>
 		<title>Ori WOTW Rando: Wiki</title>
-		<link rel="stylesheet" href="../css/styles.css?v=1.0">
+		<link rel='stylesheet' href='/WotwRandoWiki/css/styles.css?v=1.0'>
+		<script type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/search_bar.js'></script>
+	 	<script type='text/javascript' src='/WotwRandoWiki/scripts/sidebar.js'></script>
 	</head>
 	<body>
-		<h1>Logic groups</h1>
-		<hr class="rounded">
-		<div class="container">
-			<div class="main">
+		<div class='container'>
+			<h1 class='title'>Logic groups</h1>
+			<input id='search' class='search_bar' type='search' placeholder='Search..'>
+		</div>
+		<hr class='rounded'>
+		<div class='container'>
+			<div class='main'>
 				<p>
 					Logic groups are a collection of paths which dictate what skills you need in order to access new items. You can view them as a difficulty setting. Glitched is a bit particular because it enables paths which use glitches from the logic group you chose.
 				</p>
@@ -18,28 +24,16 @@
 					Below is a list of all the logic groups.
 					Click on one of the links below to learn what is required from the player in order to play in each logic group.
 				</p>
-				<hr class="rounded">
+				<hr class='rounded'>
 				<ul>
-					<li><a href="pathsets/moki.html">Moki</a></li>
-					<li><a href="pathsets/gorlek.html">Gorlek</a></li>
-					<li><a href="pathsets/glitched.html">Glitched</a></li>
-					<li><a href="pathsets/unsafe.html">Unsafe</a></li>
+					<li><a href='pathsets/moki.html'>Moki</a></li>
+					<li><a href='pathsets/gorlek.html'>Gorlek</a></li>
+					<li><a href='pathsets/glitched.html'>Glitched</a></li>
+					<li><a href='pathsets/unsafe.html'>Unsafe</a></li>
 				</ul>
 			</div>
 			<div class="divider"></div>
-			<div class="sidebar">
-				<ul style="list-style-type:none">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="new_features.html">New features</a></li>
-					<li><a href="installation.html">Installation</a></li>
-					<li><a href="how_to_start.html">How to start</a></li>
-					<li><a href="seed_generation.html">Seed generation</a></li>
-					<li><a href="logic_groups.html">Logic groups</a></li>
-					<li><a href="settings.html">Settings</a></li>
-					<li><a href="keybinds.html">Keybinds</a></li>
-					<li><a href="tutorials.html">Tutorials</a></li>
-				</ul>
-			</div>
+			<div class="sidebar"></div>
 		</div>
 	</body>
 </html>
